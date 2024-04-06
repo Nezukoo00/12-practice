@@ -10,17 +10,18 @@ class Program
         const string filePath = @"C:\Users\админ\OneDrive\Документы\30000 strings.txt";
         const string userFile = @"C:\Users\админ\OneDrive\Документы\user_data.txt";
 
-        // Считывание файла
+
+        
         var lines = await ReadFileAsync(filePath);
 
-        // Интерфейс пользователя
+        
         Console.WriteLine("Write Name:");
         var firstName = Console.ReadLine();
 
         Console.WriteLine("Write Surname:");
         var lastName = Console.ReadLine();
 
-        // Печать данных
+        
         Console.WriteLine("Print data? (y/n)");
         var printData = Console.ReadLine().ToLower() == "y";
 
